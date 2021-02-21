@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列</title>
+</head>
+
+<body>
+
+    <script>
+        const arr1 = [2, 5, 6, 8, 10, 12, 14];
+        // 陣列[索引]
+        // 最後一個資料的索引 === 陣列長度 - 1
+        // console.log(arr1[9]);
+        // 取得陣列長度
+        // console.log(arr1.length);
+        // console.log(arr1[arr1.length - 1]);
+        // 陣列[索引] = 新值;
+        arr1[0] = 200;
+        arr1[1] *= 50;
+        console.log(arr1);
+        // 從0數到 陣列長度 - 1
+        /*
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(i);
+            console.log(arr1[i]);
+        }
+        */
+
+        arr1.forEach(function (x, idx) {
+            // console.log(idx);
+            // console.log(x);
+            console.log(`第${idx + 1}個資料是${x}`);
+        });
+    </script>
+</body>
+
+</html>
